@@ -23,12 +23,12 @@ function andrea(ime) {
   <img src="${cards.image}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${cards.taskName}</h5>
-    <p class="card-text">${cards.description}.</p>
+    <p class="card-text">${cards.description}</p>
   </div>
   <hr>
   <div class="card-footer">
   <i class="fa-solid fa-triangle-exclamation druck"></i> Priority Level:<p class="mx-1 px-2 ${color} rounded neew"> ${cards.importance}</p>
-  <p><i class="fa-solid fa-calendar-days"></i> Deadline: 15.06.2022</p>
+  <p><i class="fa-solid fa-calendar-days"></i> Deadline: ${cards.deadline}</p>
   <hr>
   <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can justify-content-end"></i> Delete</button>
   <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check justify-content-end"></i> Done</button>

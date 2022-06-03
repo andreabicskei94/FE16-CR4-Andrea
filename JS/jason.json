@@ -4,6 +4,7 @@ let cards = `[
         "taskName": "Walking with the dog",
         "image": "../pics/dog.jpg",
         "description": "He needs it! And you too :)",
+        "deadline": "17.06.2022",
         "importance":5
         
     },
@@ -12,6 +13,7 @@ let cards = `[
         "taskName": "Training",
         "image": "../pics/gym.jpg",
         "description": "Go to the gym!",
+        "deadline": "15.06.2022",
         "importance":0
         
     },
@@ -20,6 +22,7 @@ let cards = `[
         "taskName": "Cook some delicious food",
         "image": "../pics/cooking.jpg",
         "description": "No junkfood this week!",
+        "deadline": "19.06.2022",
         "importance":1
         
     },
@@ -28,6 +31,7 @@ let cards = `[
         "taskName": "Wake up every day before 6 a.m ",
         "image": "../pics/early.jpg",
         "description": "Let'wake up this week a bit earlier and drink coffe with the raising sun",
+        "deadline": "15.06.2022",
         "importance":2
         
     },
@@ -36,6 +40,7 @@ let cards = `[
         "taskName": "Meet with friends this week more otfen",
         "image": "../pics/friends.jpg",
         "description": "Last couple of weeks you haven't met your friends, so do it this week!",
+        "deadline": "20.06.2022",
         "importance":0
         
     },
@@ -44,6 +49,7 @@ let cards = `[
         "taskName": "Plan your vacation after the Course",
         "image": "../pics/plan.jpg",
         "description": "You need some time off end of this summer. Plan it!",
+        "deadline": "25.06.2022",
         "importance":0
         
     },
@@ -52,6 +58,7 @@ let cards = `[
         "taskName": "Pray more often",
         "image": "../pics/pray.jpg",
         "description": "Don't forget to be thankful for everything, go inside in yourself more often",
+        "deadline": "18.06.2022",
         "importance":0
         
     },
@@ -60,6 +67,7 @@ let cards = `[
         "taskName": "Reading",
         "image": "../pics/reading.jpg",
         "description": "Read 1 book every week!",
+        "deadline": "20.06.2022",
         "importance":0
         
     },
@@ -68,6 +76,7 @@ let cards = `[
         "taskName": "Coding",
         "image": "../pics/coding.jpg",
         "description": "Last but not least, you have to exercise more with coding. :)",
+        "deadline": "18.08.2022",
         "importance":0
         
     }
