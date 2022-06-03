@@ -1,0 +1,74 @@
+.header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 150px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.icons {
+  padding-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3%;
+}
+
+.fa-brands {
+  padding: 0.8rem;
+  border: 1px solid white;
+  border-radius: 5%;
+  color: white;
+}
+
+#headingtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 12% 40%;
+  padding: 3%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80%;
+}
+
+.footer {
+  margin-top: 60px;
+}
+
+.starter-text {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=style.css.map */
