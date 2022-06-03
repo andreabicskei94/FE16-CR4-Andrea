@@ -1,7 +1,7 @@
 const cardContents = JSON.parse(cards);
 const content = document.querySelector(".content");
 
-function coloring(ime) {
+function andrea(ime) {
     content.innerHTML = "";
     for (let cards of ime) {
         if (cards.importance <= 1) {
@@ -47,11 +47,11 @@ function work() {
             cardContents[i].importance++;
             document.getElementsByClassName("neew")[i].innerHTML = cardContents[i].importance;
             var red = cardContents.slice((a, b) => b.importance - a.importance);
-            coloring(red);
+            andrea(red);
         });
     }
 }
-coloring(cardContents);
+andrea(cardContents);
 work();
 
 function sortfun() {
@@ -59,7 +59,7 @@ function sortfun() {
         return max.importance - min.importance;
     })
 }
-document.getElementsByClassName('sortingList').addEventListener("click", function() {
+document.querySelector(".sorting").addEventListener("click", function() {
     sortfun();
-    coloring(cardContents);
+    andrea(cardContents);
 });
