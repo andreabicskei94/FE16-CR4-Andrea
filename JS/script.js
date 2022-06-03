@@ -1,12 +1,9 @@
 const cardContents = JSON.parse(cards);
 const content = document.querySelector(".content");
 
-const content_2 = document.querySelector(".ruf");
-
-
-function call(x) {
-    content_2.innerHTML = "";
-    for (let cards of x) {
+function coloring(ime) {
+    content.innerHTML = "";
+    for (let cards of ime) {
         if (cards.importance <= 1) {
             color = "bg-success";
         } else if (cards.importance <= 3) {
@@ -14,14 +11,6 @@ function call(x) {
         } else {
             color = "bg-danger";
         }
-    }
-}
-
-
-
-function funy(x) {
-    content.innerHTML = "";
-    for (let cards of x) {
         content.innerHTML += `
     <div class="col-lg-4 col-sm-6 col-xs-12 g-4">
     <div class="card h-100" style="width: 18rem;">
@@ -38,7 +27,7 @@ function funy(x) {
   </div>
   <hr>
   <div class="card-footer">
-  <p><i class="fa-solid fa-triangle-exclamation"></i> Priority Level: <button type="button" class="btn btn-success">"${cards.importance}"</button></p>
+  <i class="fa-solid fa-triangle-exclamation druck"></i> Priority Level:<p class="mx-1 px-2 ${color} rounded neew"> ${cards.importance}</p>
   <p><i class="fa-solid fa-calendar-days"></i> Deadline: 15.06.2022</p>
   <hr>
   <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can justify-content-end"></i> Delete</button>
@@ -48,35 +37,29 @@ function funy(x) {
 </div>
     `;
     }
-
-
+    work();
 }
-funy(cardContents);
-trool();
 
-function action() {
-    let btns = document.getElementsByClassName("b-likes");
-    for (let i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
+function work() {
+    let nesto = document.getElementsByClassName("druck");
+    for (let i = 0; i < nesto.length; i++) {
+        nesto[i].addEventListener("click", function() {
             cardContents[i].importance++;
-
-            document.getElementsByClassName("importance")[i].innerHTML = cardContents[i].importance;
-
-            var sortedArray = cardContents.slice((a, b) => b.importance - a.importance);
-            call(sortedArray);
+            document.getElementsByClassName("neew")[i].innerHTML = cardContents[i].importance;
+            var red = cardContents.slice((a, b) => b.importance - a.importance);
+            coloring(red);
         });
     }
 }
-call(cardContents);
-action();
+coloring(cardContents);
+work();
 
-function sortpr() {
-    cardContents.sort(function(a, v) {
-        return v.importance - a.importance;
+function sortfun() {
+    cardContents.sort(function(min, max) {
+        return max.importance - min.importance;
     })
 }
-
-document.querySelector(".lokas").addEventListener("click", function() {
-    sortpr();
-    call(cardContents);
+document.getElementsByClassName('sortingList').addEventListener("click", function() {
+    sortfun();
+    coloring(cardContents);
 });
