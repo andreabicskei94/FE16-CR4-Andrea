@@ -1,0 +1,74 @@
+let cards = `[
+    {
+        "id":"1",
+        "taskName": "Walking with the dog",
+        "image": "../pics/dog.jpg",
+        "description": "He needs it! And you too :)",
+        "importance":0
+        
+    },
+    {
+        "id":"2",
+        "taskName": "Training",
+        "image": "../pics/gym.jpg",
+        "description": "Go to the gym!",
+        "importance":0
+        
+    },
+    {
+        "id":"3",
+        "taskName": "Cook some delicious food",
+        "image": "../pics/cooking.jpg",
+        "description": "No junkfood this week!",
+        "importance":0
+        
+    },
+    {
+        "id":"4",
+        "taskName": "Wake up every day before 6 a.m ",
+        "image": "../pics/early.jpg",
+        "description": "Let'wake up this week a bit earlier and drink coffe with the raising sun",
+        "importance":0
+        
+    },
+    {
+        "id":"5",
+        "taskName": "Meet with friends this week more otfen",
+        "image": "../pics/friends.jpg",
+        "description": "Last couple of weeks you haven't met your friends, so do it this week!",
+        "importance":0
+        
+    },
+    {
+        "id":"6",
+        "taskName": "Plan your vacation after the Course",
+        "image": "../pics/plan.jpg",
+        "description": "You need some time off end of this summer. Plan it!",
+        "importance":0
+        
+    },
+    {
+        "id":"7",
+        "taskName": "Pray more often",
+        "image": "../pics/pray.jpg",
+        "description": "Don't forget to be thankful for everything, go inside in yourself more often",
+        "importance":0
+        
+    },
+    {
+        "id":"8",
+        "taskName": "Reading",
+        "image": "../pics/reading.jpg",
+        "description": "Read 1 book every week!",
+        "importance":0
+        
+    },
+    {
+        "id":"9",
+        "taskName": "Codeing",
+        "image": "../pics/dog.jpg",
+        "description": "Last but not least, you have to exercise more with coding. :)",
+        "importance":0
+        
+    }
+]`
