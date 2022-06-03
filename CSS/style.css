@@ -55,7 +55,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 80%;
+  gap: 70%;
 }
 
 .footer {

@@ -65,8 +65,8 @@ let cards = `[
     },
     {
         "id":"9",
-        "taskName": "Codeing",
-        "image": "../pics/dog.jpg",
+        "taskName": "Coding",
+        "image": "../pics/coding.jpg",
         "description": "Last but not least, you have to exercise more with coding. :)",
         "importance":0
         
