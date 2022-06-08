@@ -1,7 +1,7 @@
 const cardContents = JSON.parse(cards);
 const content = document.querySelector(".content");
 
-function andrea(ime) {
+function color_changing(ime) {
     content.innerHTML = "";
     for (let cards of ime) {
         if (cards.importance <= 1) {
@@ -27,7 +27,7 @@ function andrea(ime) {
   </div>
   <hr>
   <div class="card-footer">
-  <i class="fa-solid fa-triangle-exclamation druck"></i> Priority Level:<p class="mx-1 px-2 ${color} rounded neew"> ${cards.importance}</p>
+  <i class="fa-solid fa-triangle-exclamation druck"></i> Priority Level:<p class="mx-1 px-2 ${color} rounded new_priority"> ${cards.importance}</p>
   <p><i class="fa-solid fa-calendar-days"></i> Deadline: ${cards.deadline}</p>
   <hr>
   <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can justify-content-end"></i> Delete</button>
@@ -45,14 +45,14 @@ function work() {
     for (let i = 0; i < nesto.length; i++) {
         nesto[i].addEventListener("click", function() {
             cardContents[i].importance++;
-            document.getElementsByClassName("neew")[i].innerHTML = cardContents[i].importance;
+            document.getElementsByClassName("new_priority")[i].innerHTML = cardContents[i].importance;
             var red = cardContents.slice((a, b) => b.importance - a.importance);
-            andrea(red);
+            color_changing(red);
         });
     }
 }
-andrea(cardContents);
-work();
+color_changing(cardContents);
+
 
 function sortfun() {
     cardContents.sort(function(min, max) {
@@ -61,5 +61,5 @@ function sortfun() {
 }
 document.querySelector(".sorting").addEventListener("click", function() {
     sortfun();
-    andrea(cardContents);
+    color_changing(cardContents);
 });

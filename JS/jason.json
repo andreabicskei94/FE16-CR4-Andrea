@@ -5,7 +5,7 @@ let cards = `[
         "image": "../pics/dog.jpg",
         "description": "He needs it! And you too :)",
         "deadline": "17.06.2022",
-        "importance":5
+        "importance":0
         
     },
     {
@@ -23,7 +23,7 @@ let cards = `[
         "image": "../pics/cooking.jpg",
         "description": "No junkfood this week!",
         "deadline": "19.06.2022",
-        "importance":1
+        "importance":0
         
     },
     {
@@ -32,7 +32,7 @@ let cards = `[
         "image": "../pics/early.jpg",
         "description": "Let'wake up this week a bit earlier and drink coffe with the raising sun",
         "deadline": "15.06.2022",
-        "importance":2
+        "importance":0
         
     },
     {
